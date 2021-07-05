@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH Máquina</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <main>
+
+        <div id="overlay"></div>
+
+        <section class="square squareBottons">
+            <!--Buttons-->
+            <button id="encender" onclick="encender()">Encender</button>
+            <button id="apagar" onclick="apagar()">Apagar</button>
+            <button disabled id="mostrarContenidoMemoria" onclick="mostrarContenidoMemoria()">Mostrar Contenido Memoria</button>
+        </section>
+
+        <section>
+        <!--Image-->
+            <img id="monitor" src="img/Monitor.png" alt="Aquí deberia ir un monitor*" style="width: 561px;height: 452px;">
+            <div id="screenContent">
+                <a id="screenText"></a>
+            </div>
+        </section>
+
+        <section id="inputSection" class="square squareInputSection">
+            <!--Read and print an archive-->
+            <input type="file" id="archivoACargar" accept=".ch" disabled>
+        </section>
+
+        <div id="positionModo" class="square squareModo">
+            <a class="modo">Modo Kernel</a>
+        </div>
+
+        <div id="posicionEntrada" class="square squarePosEntrada">
+            <label for="memoria">Memoria:</label>
+            <input class="inputsSquare" type="number" id="memoria" name="memoria" value="100">
+            <label for="kernel">Kernel:</label>
+            <input class="inputsSquare" type="number" id="kernel" name="kernel" value="19">
+            <label for="acumulador">Acumulador:</label>   
+            <input disabled class="inputsSquare" type="number" id="acumulador" name="acumulador"><br>
+            <!--input class="buttonAcept" type="button" value="Aceptar" onclick = mostrarMemoria()-->
+        </div>
+        
+        <div id="showPositions" class="square squareShowPosition">new</div>
+
+        <div id="titleOperations">
+            <h3 class="title">Contenido</h3>
+        </div>
+        <section id="operationSection" class="square squareOperations aline">
+            <div id="positionOnMemory"></div>
+            <div id="operations"></div>
+        </section>
+
+        <div id="titleMemoria">
+            <h3 class="title">Contenido Memoria</h3>
+        </div>
+        <section id="contenidoMemoria" class="square squareMemoria aline">
+            <div id="direction">
+                <h4 class="subir">Dirección</h4>
+                <div id="directionSection"></div>
+            </div>
+            <div id="content">
+                <h4 class="subir">Contenido</h4>
+                <div id="contentSection"></div>
+            </div>
+        </section>
+        <section id="variablesSection" class="extras">
+            <div id="variables" class="square squareExtras">
+                <h4 class="subir">Variables</h4>
+                <div id="contentVariables"></div>
+            </div>
+            <div id="etiquetas" class="square squareExtras">
+                <h4 class="subir">Etiquetas</h4>
+                <div id="contentLabels"></div>
+            </div>
+        </section>
+        
+        <button disabled id="imprimir" onclick="mostrarImpresora()">Imprimir</button>
+        <button disabled id="cerrarVentImprimir" onclick="cerrarVentanaImprimir()">Cerrar</button>
+        <div id="printSection">
+            <img src="img/maquinaEscribir.png" alt="maquinaEscribir" style="width: 320px;height: 233.25px;">
+            <div id="printContent">hello</div>
+        </div>
+
+        <script src="js/index.js"></script>
+    </main>
+</body>
+</html>

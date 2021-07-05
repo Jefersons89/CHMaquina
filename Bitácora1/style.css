@@ -1,0 +1,333 @@
+/*General*/
+body {
+    background-image: url("../img/fondoEscritorio2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+textarea {
+    resize: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -280px;
+    margin-left: -252px;
+}
+
+/*Classes*/
+.aline {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.square {
+    border: 2px solid black;
+    overflow: scroll;
+}
+
+.squareOperations{
+    width: 350px;
+    height: 318px;
+    margin: 10px;
+    margin-top: -20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.squareOperations:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.squareMemoria {
+    width: 340px;
+    height: 548px;
+    margin: 10px;
+    border-radius: 8px;
+    float: right;
+    margin-top: -332px;
+    background-color: rgba(255, 255, 255, 0.808);
+    visibility: hidden;
+}
+
+.squareMemoria:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.squareBottons {
+    width: 350px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 8px;
+    float: right;
+    margin-top: -0px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.squareBottons:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.squareBottons button {
+    margin-top: 9px;
+}
+
+.squareExtras {
+    width: 175px;
+    margin: 10px;
+    height: 206px;
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.squareExtras:hover  {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.squarePosEntrada {
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.squarePosEntrada:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.squareInputSection {
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.squareInputSection:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.square::-webkit-scrollbar { 
+    display: none;
+  }
+
+.title {
+    text-align: center;
+    font-size: bold;
+}
+
+.inputsSquare {
+    font-size: 14px;
+    border-radius: 5px;
+    transition: border 0.3s;
+    width: 15%;
+    margin-top: 28px;
+}
+
+.buttonAcept {
+    margin-top: 15px;
+}
+
+.subir {
+    margin-top: 5px;
+}
+
+.extras {
+    display: flex;
+    margin-left: -10px;
+}
+
+.squareModo {
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.modo {
+    position: absolute;
+    margin-top: 15px;
+    left: 60px;
+}
+
+.squareShowPosition {
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+/*Id's*/
+#posicionEntrada {
+    position: absolute;
+    left: 28.8%;
+    top: 70.3%;
+    width: 550px;
+    height: 80px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+}
+
+#inputSection{
+    width: 350px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    height: 40px;
+}
+
+#inputSection input {
+    margin-top: 9px;   
+}
+
+#titleOperations {
+    width: 350px;
+    height: 50px;
+    margin: 10px;
+}
+
+#titleMemoria {
+    width: 350px;
+    height: 50px;
+    margin: 10px;
+    float: right;
+    margin-top: -390px;
+    color: white;
+}
+
+#direction {
+    margin-left: 5px;
+}
+
+#content {
+    margin-left: 10%;
+}
+
+#operationSection {
+   visibility: hidden;
+}
+
+#etiquetas {
+    margin-left: -12px;
+}
+
+#variables {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#etiquetas {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#positionOnMemory {
+   padding: 8px;
+}
+
+#operations {
+    padding: 8px;
+}
+
+#variablesSection {
+    visibility: hidden;
+}
+
+#positionModo {
+    position: absolute;
+    left: 42%;
+    top: 63.5%;
+    width: 200px;
+    height: 45px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+}
+
+#screenContent {
+    position: absolute;
+    left: 31.05%;
+    top: 9.7%;
+    width: 515.2px;
+    height: 294px;
+    background: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#screenText {
+    position: inherit;
+    top: 50%;
+}
+
+#showPositions {
+    position: absolute;
+    left: 28.8%;
+    top: 82%;
+    width: 550px;
+    height: 80px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#imprimir {
+    position: absolute;
+    left: 63.5%;
+    top: 55.5%;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1;
+}
+
+#cerrarVentImprimir {
+    position: absolute;
+    left: 48.5%;
+    top: 78%;
+    z-index: 3;
+    border-radius: 8px;
+    display: none;
+}
+
+#printSection {
+    z-index: 2;
+    position: absolute;
+    left: 29.7%;
+    top: 10.3%;
+    width: 550px;
+    height: 500px;
+    border-radius: 8px;
+    text-align: center;
+    background: white;
+    display: none;
+    transform: translateY(-3rem);
+    transition: display 200ms ease-out, transform 500ms ease-out;
+}
+
+#monitor {
+    width: 50%;
+    margin-top: -300px;
+    margin-left: -275px;
+    left: 50%;
+    top: 50%;
+    position: absolute; 
+}
+
+#printContent {
+    width: 400px;
+    height: 215px;
+    margin: auto;
+    border-radius: 8px;
+    text-align: center;
+    background: white;
+    border: 2px solid black;
+}
